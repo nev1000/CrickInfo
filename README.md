@@ -1,6 +1,6 @@
-# CricFix
+# CricInfo
 
-CricFix is a web application for viewing cricket game information using the Ultimate Cricket Data API.
+CricInfo is a web application for viewing cricket game information using the Ultimate Cricket Data API.
 
 ## Features
 - View upcoming and past cricket games
