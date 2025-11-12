@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Games!{% endblock %}
+
+{% block content %}
+
+<form action="/games" method="post">
+<h3>Matches</h3>
+
+<div class="time" style="display: flex; gap: 5px; align-items: center; margin-bottom: 10px;">
+<input type="radio" id="completed" name="time" value="completed">
+<label for="completed">Completed</label><br>
+<input type="radio" id="live and upcoming" name="time" value="live and upcoming">
+<label for="live and upcoming">Live and Upcoming</label><br>
+</div>
+
+<div class="gender" style="display: flex; gap: 5px; align-items: center; margin-bottom: 10px;">
+<input type="radio" id="men" name="gender" value="men">
+<label for="men">Men</label><br>
+<input type="radio" id="women" name="gender" value="women">
+<label for="women">Women</label><br>
+<input type="radio" id="all" name="gender" value="all">
+<label for="all">All</label><br>
+</div>
+
+<div class="format" style="display: flex; gap: 5px; align-items: center; margin-bottom: 20px;">
+<input type="radio" id="t20" name="format" value="t20">
+<label for="t20">T20</label><br>
+<input type="radio" id="one-day" name="format" value="one-day">
+<label for="one-day">One-Day</label><br>
+<input type="radio" id="test" name="format" value="test">
+<label for="test">Test</label><br>
+</div>
+
+<button type="submit">SEARCH</button>
+</form>
+
+{% endblock %}
+
+
+d982fad2-4bbb-4b37-a9ec-a90da290eb7c

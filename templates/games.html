@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if games|length == 0 %}
+<p>No matches found</p>
+{% else %}
+<ul style="list-style-type: none; padding: 0; margin: 0;">
+{% for game in games %}
+<li>
+    <p>_____________________________________________</p>
+    <p>Teams : {{  game.teams[0] }} vs {{ game.teams[1] }}</p>
+    <p>Status : {{ game.status }}</p>
+    <p>Venue : {{  game.venue }}</p>
+    <p>Date : {{  game.date }}</p>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+<form action="/">
+<button type="submit">BACK</button>
+</form>
+{% endblock content %}
